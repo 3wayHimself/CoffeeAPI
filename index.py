@@ -39,7 +39,7 @@ def index():
         background=random.choice(cache_images), images=len(cache_images)
     )
 
-@app.route("/lewd")
+@app.route("/api/lewd")
 def randomcoffeeJSON():
     domain = config.domain
 
