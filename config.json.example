@@ -2,9 +2,9 @@
   "localhost": false,
   "domain": "https://coffee.alexflipnote.xyz/",
   "title": "Coffee API",
-  "description": "Start your day with a lovely coffee~",
+  "description": "Lewd stuff, turn back if you're not 18+. git: AlexFlipnote/CoffeeAPI",
   "imagefolder": "images",
   "suffix": "_coffee",
-  "port": 3300,
-  "debug": true
+  "port": 80,
+  "debug": false
 }
