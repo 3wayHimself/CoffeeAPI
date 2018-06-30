@@ -39,37 +39,7 @@ def index():
         background=random.choice(cache_images), images=len(cache_images)
     )
 
-
-# This is just for the memes, the holy 418 error \o/
-@app.route("/teapot")
-@app.route("/418")
-def teapot():
-    return abort(418)
-
-
-@app.route("/<filename>")
-def coffee(filename):
-    return send_from_directory(config.imagefolder, filename)
-
-
-@app.route("/assets/images/<filename>")
-def template_images(filename):
-    return send_from_directory("templates/images", filename)
-
-
-@app.route("/random")
-def randomcoffee():
-    choose_random = random.choice(cache_images)
-    name = choose_random.split(".")
-
-    return send_file(
-        f"{config.imagefolder}/{choose_random}",
-        mimetype=f"image/{name[1] if name[1] != 'jpg' else 'jpeg'}",
-        attachment_filename=choose_random
-    )
-
-
-@app.route("/random.json")
+@app.route("/lewd")
 def randomcoffeeJSON():
     domain = config.domain
 
